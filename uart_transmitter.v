@@ -55,17 +55,17 @@ module uart_transmitter(
                  4*HALF_BIT_PERIOD: 
                     uart_txd <= data_temp[1]; // transmitting 2nd data
                  6*HALF_BIT_PERIOD: 
-                    uart_txd <= data_temp[2]; // transmitting 3st data
+                     uart_txd <= data_temp[2]; // transmitting 3rd data
                  8*HALF_BIT_PERIOD: 
-                    uart_txd <= data_temp[3]; // transmitting 4st data
+                    uart_txd <= data_temp[3]; // transmitting 4th data
                 10*HALF_BIT_PERIOD: 
-                    uart_txd <= data_temp[4]; // transmitting 5st data
+                    uart_txd <= data_temp[4]; // transmitting 5th data
                 12*HALF_BIT_PERIOD: 
-                    uart_txd <= data_temp[5]; // transmitting 6st data
+                    uart_txd <= data_temp[5]; // transmitting 6th data
                 14*HALF_BIT_PERIOD: 
-                    uart_txd <= data_temp[6]; // transmitting 7st data
+                    uart_txd <= data_temp[6]; // transmitting 7th data
                 16*HALF_BIT_PERIOD: 
-                    uart_txd <= data_temp[7]; // transmitting 8st data
+                    uart_txd <= data_temp[7]; // transmitting 8th data
                 18*HALF_BIT_PERIOD: 
                     uart_txd <= 1;            // transmitting stop bit = 1
                 default:            
